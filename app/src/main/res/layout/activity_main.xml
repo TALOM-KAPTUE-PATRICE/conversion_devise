@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    tools:context=".MainActivity">
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginLeft="150dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="70dp"
+    android:src="@drawable/argent"/>
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Bienvenue sur G-convert"
+      android:textColor="@color/bleu"
+      android:textStyle="italic"
+      android:layout_marginLeft="136dp"
+      android:textSize="15dp"
+      android:id="@+id/descpt"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="montant a convertir"
+        android:layout_marginTop="10dp"
+        android:id="@+id/saisiMontant"
+        android:inputType="numberDecimal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="De:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:id="@+id/description"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/choixDevise"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A:"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:id="@+id/destinsDEvise"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deviseArriver"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConvertir"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="CONVERTIR"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:id="@+id/idRESULT"/>
+</LinearLayout>
